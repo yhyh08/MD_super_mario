@@ -18,7 +18,6 @@ public class PowerUp : MonoBehaviour
             Collect(other.gameObject);
         }
     }
-
     private void Collect(GameObject player)
     {
         switch (type)
@@ -42,5 +41,4 @@ public class PowerUp : MonoBehaviour
 
         Destroy(gameObject);
     }
-
 }

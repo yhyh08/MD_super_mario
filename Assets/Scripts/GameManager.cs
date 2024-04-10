@@ -5,11 +5,23 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public int world { get; private set; }
-    public int stage { get; private set; }
-    public int lives { get; private set; }
-    public int coins { get; private set; }
-
+    public int world { 
+        get; 
+        private set; 
+    }
+    public int stage { 
+        get; 
+        private set; 
+    }
+    public int lives { 
+        get; 
+        private set; 
+    }
+    public int coins { 
+        get; 
+        private set; 
+    }
+    
     private void Awake()
     {
         if (Instance != null) {
@@ -36,10 +48,10 @@ public class GameManager : MonoBehaviour
 
     public void NewGame()
     {
-        lives = 3;
+        lives = 1;
         coins = 0;
 
-        LoadLevel(1, 1);
+        LoadLevel(1, 2);
     }
 
     public void GameOver()
@@ -59,7 +71,10 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
-        LoadLevel(world, stage + 1);
+         if (world == 1 && stage == 2)
+         {
+            LoadLevel(world, stage + 1);
+         }
     }
 
     public void ResetLevel(float delay)
@@ -94,5 +109,4 @@ public class GameManager : MonoBehaviour
     {
         lives++;
     }
-
 }
