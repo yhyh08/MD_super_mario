@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         lives = 1;
         coins = 0;
 
-        LoadLevel(1, 2);
+        LoadLevel(1, 1);
     }
 
     public void GameOver()
@@ -71,10 +71,7 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
-         if (world == 1 && stage == 2)
-         {
-            LoadLevel(world, stage + 1);
-         }
+        LoadLevel(world, stage +1);
     }
 
     public void ResetLevel(float delay)
