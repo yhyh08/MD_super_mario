@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class BlockCoin : MonoBehaviour
 {
-    
     private void Start()
     {
         GameManager.Instance.AddCoin();
@@ -39,7 +38,5 @@ public class BlockCoin : MonoBehaviour
 
         transform.localPosition = to;
     }
-
-
 
 }

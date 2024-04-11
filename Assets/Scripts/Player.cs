@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
 
     public int  Coin = 0;
     public Text CoinNum;
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "collection")
