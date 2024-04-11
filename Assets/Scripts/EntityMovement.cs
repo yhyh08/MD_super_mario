@@ -24,7 +24,6 @@ public class EntityMovement : MonoBehaviour
         enabled = true;
         #endif
     }
-
     private void OnBecameInvisible()
     {
         enabled = false;
@@ -62,5 +61,4 @@ public class EntityMovement : MonoBehaviour
             transform.localEulerAngles = Vector3.zero;
         }
     }
-
 }
