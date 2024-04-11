@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
 
     public void ResetLevel()
     {
-        lives--;
+        lives = lives - 1 ;
 
         if (lives > 0) {
             LoadLevel(world, stage);
