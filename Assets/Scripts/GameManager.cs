@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,17 +49,18 @@ public class GameManager : MonoBehaviour
 
     public void NewGame()
     {
-        lives = 3;
+        lives = 2;
         coins = 0;
+        stage = 0;
 
-        LoadLevel(1, 0);
+        LoadLevel(1, stage);
     }
 
     public void GameOver()
     {
         // TODO: show game over screen
-
-        NewGame();
+        SceneManager.LoadScene($"Game Over");
+        // NewGame();
     }
 
     public void LoadLevel(int world, int stage)
@@ -71,7 +73,8 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
-        LoadLevel(world, stage + 1);
+        stage += 1;
+        LoadLevel(world, stage);
     }
 
     public void ResetLevel(float delay)
@@ -82,7 +85,7 @@ public class GameManager : MonoBehaviour
 
     public void ResetLevel()
     {
-        lives = lives - 1 ;
+        lives -= 1 ;
 
         if (lives > 0) {
             LoadLevel(world, stage);
@@ -106,4 +109,10 @@ public class GameManager : MonoBehaviour
     {
         lives++;
     }
+
+    // public void MoveToScene()
+    // {
+    //     NewGame();
+    //     // SceneManager.LoadScene(sceneID);
+    // } 
 }

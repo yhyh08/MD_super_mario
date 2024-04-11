@@ -18,9 +18,10 @@ public class GameOver : MonoBehaviour
         }
     }
     // Start is called before the first frame update
-    public void MoveToScene(int sceneID)
-   {
-    SceneManager.LoadScene(sceneID);
-   } 
+    public void MoveToScene()
+    {
+        GameManager.Instance.NewGame();
+        // SceneManager.LoadScene(sceneID);
+    } 
   
 }

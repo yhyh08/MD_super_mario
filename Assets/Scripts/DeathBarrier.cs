@@ -9,7 +9,6 @@ public class DeathBarrier : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Game Over");
             other.gameObject.SetActive(false);
             
             GameManager.Instance.ResetLevel(3f);
