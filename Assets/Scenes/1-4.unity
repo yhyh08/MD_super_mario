@@ -274,7 +274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9166230116066908815, guid: e62038c0504cf124bb51628b480df8f0, type: 3}
       propertyPath: m_Name
-      value: 'Mystery (mushroom)  '
+      value: 'Mystery (bread)  '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1484,7 +1484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9166230116066908815, guid: e62038c0504cf124bb51628b480df8f0, type: 3}
       propertyPath: m_Name
-      value: 'Mystery (mushroom) '
+      value: 'Mystery (bread) '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1868,6 +1868,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1946614163}
     m_Modifications:
+    - target: {fileID: 1326665629888359022, guid: 77d5b48fb9f70954c94bc503198ad8e7, type: 3}
+      propertyPath: flatSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bee24d2dcc59d2429af66bb6ec8e4b7, type: 3}
     - target: {fileID: 4953937513092463113, guid: 77d5b48fb9f70954c94bc503198ad8e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 69.21
@@ -3881,7 +3885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 828163369}
   m_Layer: 0
-  m_Name: Stage
+  m_Name: Stage4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4580,6 +4584,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1946614163}
     m_Modifications:
+    - target: {fileID: 1326665629888359022, guid: 77d5b48fb9f70954c94bc503198ad8e7, type: 3}
+      propertyPath: flatSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bee24d2dcc59d2429af66bb6ec8e4b7, type: 3}
     - target: {fileID: 4953937513092463113, guid: 77d5b48fb9f70954c94bc503198ad8e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.98762
@@ -5772,6 +5780,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1946614163}
     m_Modifications:
+    - target: {fileID: 1326665629888359022, guid: 77d5b48fb9f70954c94bc503198ad8e7, type: 3}
+      propertyPath: flatSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bee24d2dcc59d2429af66bb6ec8e4b7, type: 3}
     - target: {fileID: 4953937513092463113, guid: 77d5b48fb9f70954c94bc503198ad8e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.903492
@@ -6711,6 +6723,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1946614163}
     m_Modifications:
+    - target: {fileID: 1326665629888359022, guid: 77d5b48fb9f70954c94bc503198ad8e7, type: 3}
+      propertyPath: flatSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bee24d2dcc59d2429af66bb6ec8e4b7, type: 3}
     - target: {fileID: 4953937513092463113, guid: 77d5b48fb9f70954c94bc503198ad8e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 92.34038
@@ -6851,7 +6867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9166230116066908815, guid: e62038c0504cf124bb51628b480df8f0, type: 3}
       propertyPath: m_Name
-      value: Mystery (mushroom)
+      value: Mystery (bread)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7287,6 +7303,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1946614163}
     m_Modifications:
+    - target: {fileID: 1326665629888359022, guid: 77d5b48fb9f70954c94bc503198ad8e7, type: 3}
+      propertyPath: flatSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bee24d2dcc59d2429af66bb6ec8e4b7, type: 3}
     - target: {fileID: 4953937513092463113, guid: 77d5b48fb9f70954c94bc503198ad8e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 58.93
@@ -9832,7 +9852,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 0c057401fbf74454fa3032deae7f0a61, type: 3}
     - target: {fileID: 9166230116066908815, guid: e62038c0504cf124bb51628b480df8f0, type: 3}
       propertyPath: m_Name
-      value: 'Mystery ( mushroom) '
+      value: 'Mystery (bread) '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
