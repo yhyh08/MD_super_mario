@@ -21,9 +21,9 @@ public class Player : MonoBehaviour
     {
         if(collision.tag == "collection")
         {
-            
             Coin += 1;
             CoinNum.text = Coin.ToString();
+            Debug.Log(CoinNum.text);
         }
     }
 

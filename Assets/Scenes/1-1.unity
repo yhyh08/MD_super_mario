@@ -2212,6 +2212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoinEgg
       objectReference: {fileID: 0}
+    - target: {fileID: 841438207429839045, guid: 8268706537ea4644a879746713c1ec55, type: 3}
+      propertyPath: m_TagString
+      value: collection
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2547,9 +2551,17 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 841438207429839045, guid: 2f45153d43a6e8449b8dca55e0850b64, type: 3}
+    - target: {fileID: 8090422394729228968, guid: e62038c0504cf124bb51628b480df8f0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9166230116066908815, guid: e62038c0504cf124bb51628b480df8f0, type: 3}
       propertyPath: m_Name
       value: Mystery Block
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166230116066908815, guid: e62038c0504cf124bb51628b480df8f0, type: 3}
+      propertyPath: m_TagString
+      value: collection
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6262,9 +6274,17 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 841438207429839045, guid: 2f45153d43a6e8449b8dca55e0850b64, type: 3}
+    - target: {fileID: 8090422394729228968, guid: e62038c0504cf124bb51628b480df8f0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9166230116066908815, guid: e62038c0504cf124bb51628b480df8f0, type: 3}
       propertyPath: m_Name
       value: Mystery Block
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166230116066908815, guid: e62038c0504cf124bb51628b480df8f0, type: 3}
+      propertyPath: m_TagString
+      value: collection
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

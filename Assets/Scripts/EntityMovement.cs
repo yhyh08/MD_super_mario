@@ -62,5 +62,4 @@ public class EntityMovement : MonoBehaviour
             transform.localEulerAngles = Vector3.zero;
         }
     }
-
 }

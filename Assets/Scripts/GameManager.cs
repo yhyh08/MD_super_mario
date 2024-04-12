@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
             Instance = null;
         }
     }
-
     private void Start()
     {
         Application.targetFrameRate = 60;
@@ -49,7 +48,7 @@ public class GameManager : MonoBehaviour
 
     public void NewGame()
     {
-        lives = 2;
+        lives = 1;
         coins = 0;
         stage = 0;
 
@@ -58,9 +57,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        // TODO: show game over screen
         SceneManager.LoadScene($"Game Over");
-        // NewGame();
     }
 
     public void LoadLevel(int world, int stage)
@@ -97,7 +94,7 @@ public class GameManager : MonoBehaviour
     public void AddCoin()
     {
         coins++;
-
+        
         if (coins == 100)
         {
             coins = 0;
@@ -109,10 +106,4 @@ public class GameManager : MonoBehaviour
     {
         lives++;
     }
-
-    // public void MoveToScene()
-    // {
-    //     NewGame();
-    //     // SceneManager.LoadScene(sceneID);
-    // } 
 }
