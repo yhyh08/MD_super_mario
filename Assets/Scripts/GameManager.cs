@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
         get; 
         private set; 
     }
-    
+
+    //public Text TotalCoin;
     private void Awake()
     {
         if (Instance != null) {
@@ -94,14 +95,20 @@ public class GameManager : MonoBehaviour
     public void AddCoin()
     {
         coins++;
-        
+        Debug.Log(coins);
         if (coins == 100)
         {
             coins = 0;
             AddLife();
         }
     }
-
+    /*public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Coin")
+        {
+            TotalCoin.text = "" + coins;
+        }
+    }*/
     public void AddLife()
     {
         lives++;
