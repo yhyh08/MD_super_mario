@@ -14371,6 +14371,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650462487}
     m_Modifications:
+    - target: {fileID: 841438207429839042, guid: 5b4ba3e14acf2df4a80595ef2e498b22, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d0e0bfe5e125cf946be4f622b19801c3, type: 3}
     - target: {fileID: 841438207429839043, guid: 5b4ba3e14acf2df4a80595ef2e498b22, type: 3}
       propertyPath: m_LocalPosition.x
       value: 77.51
@@ -16087,6 +16091,7 @@ MonoBehaviour:
   coinNum: {fileID: 1057284630}
   targetObject: {fileID: 1531129256}
   customFont: {fileID: 12800000, guid: 51b2bc90222accc4bb50f709af422a02, type: 3}
+  clip: {fileID: 8300000, guid: d0e0bfe5e125cf946be4f622b19801c3, type: 3}
 --- !u!114 &1531129258
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class CoinManager : MonoBehaviour
     public GameObject targetObject;
     private Text textComponent;
     public Font customFont;
+    public AudioClip clip;
+    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -24,7 +26,12 @@ public class CoinManager : MonoBehaviour
     }
     
     void Start(){
-       
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            // 如果不存在，则添加一个AudioSource组件
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     void Update()
@@ -34,6 +41,8 @@ public class CoinManager : MonoBehaviour
 
     public void AddCoin()
     {
+        audioSource.clip = clip;
+        audioSource.Play();
         coins++;
         if (coins == 30)
         {

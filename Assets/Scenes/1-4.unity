@@ -10507,6 +10507,7 @@ MonoBehaviour:
   coinNum: {fileID: 2089891548}
   targetObject: {fileID: 1992583483}
   customFont: {fileID: 12800000, guid: 51b2bc90222accc4bb50f709af422a02, type: 3}
+  clip: {fileID: 8300000, guid: d0e0bfe5e125cf946be4f622b19801c3, type: 3}
 --- !u!114 &1992583485
 MonoBehaviour:
   m_ObjectHideFlags: 0
