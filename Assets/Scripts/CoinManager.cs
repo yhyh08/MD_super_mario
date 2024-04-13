@@ -82,8 +82,6 @@ public class CoinManager : MonoBehaviour
         if (textComponent != null)
         {
             Destroy(textComponent.gameObject);
-        }else{
-
         }
     }
 

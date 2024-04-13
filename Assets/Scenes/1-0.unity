@@ -1171,7 +1171,7 @@ GameObject:
   - component: {fileID: 2045921944}
   - component: {fileID: 2045921943}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: coin manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1191,9 +1191,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: 0
   coinNum: {fileID: 1050990839}
-  TotalCoin: {fileID: 0}
-  targetObject: {fileID: 0}
-  customFont: {fileID: 0}
+  targetObject: {fileID: 2045921942}
+  customFont: {fileID: 12800000, guid: 51b2bc90222accc4bb50f709af422a02, type: 3}
 --- !u!114 &2045921944
 MonoBehaviour:
   m_ObjectHideFlags: 0
