@@ -14,13 +14,13 @@ public class Player : MonoBehaviour
     public bool dead => deathAnimation.enabled;
     public bool starpower { get; private set; }
 
-    public int  Coin = 0;
+    public int Coin = 0;
     public Text CoinNum;
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "collection")
         {
-            
             Coin += 1;
             CoinNum.text = Coin.ToString();
         }

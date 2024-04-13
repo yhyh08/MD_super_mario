@@ -18,13 +18,12 @@ public class PowerUp : MonoBehaviour
             Collect(other.gameObject);
         }
     }
-
     private void Collect(GameObject player)
     {
         switch (type)
         {
             case Type.Coin:
-                GameManager.Instance.AddCoin();
+                CoinManager.Instance.AddCoin();
                 break;
 
             case Type.ExtraLife:
@@ -42,5 +41,4 @@ public class PowerUp : MonoBehaviour
 
         Destroy(gameObject);
     }
-
 }

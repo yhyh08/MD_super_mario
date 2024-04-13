@@ -7,14 +7,14 @@ public class Menu : MonoBehaviour
 {
    public void PlayGame()
    {
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        GameManager.Instance.NextLevel();
    } 
    public void QuitGame()
    {
-    Application.Quit();
+        Application.Quit();
    } 
    public void UIEnable()
    {
-    GameObject.Find("Canvas/Main Menu/UI").SetActive(true);
+        GameObject.Find("Canvas/Main Menu/UI").SetActive(true);
    } 
 }
