@@ -642,7 +642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &820431098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,6 +815,7 @@ MonoBehaviour:
   coinNum: {fileID: 820431098}
   targetObject: {fileID: 848076463}
   customFont: {fileID: 12800000, guid: 51b2bc90222accc4bb50f709af422a02, type: 3}
+  clip: {fileID: 0}
 --- !u!114 &848076465
 MonoBehaviour:
   m_ObjectHideFlags: 0
