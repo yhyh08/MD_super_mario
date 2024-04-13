@@ -9,8 +9,8 @@ public class CoinManager : MonoBehaviour
 
     public int coins ;
     public Text coinNum;
-
     public GameObject targetObject;
+    private Text textComponent;
     public Font customFont;
 
     private void Awake()
@@ -41,15 +41,24 @@ public class CoinManager : MonoBehaviour
         }
     }
 
-    public void updateScene(){
+    
+    public void ResetCoins(){
+        coins = 0;
+    }
+
+    public void UpdateScene(){
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    public void ResetScene(){
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // 生成一个text
         GameObject textObject = new GameObject("CoinNumber");
-        Text textComponent = textObject.AddComponent<Text>();
+        textComponent = textObject.AddComponent<Text>();
 
         textComponent.text = coins.ToString();
         textComponent.font = customFont;
@@ -67,4 +76,15 @@ public class CoinManager : MonoBehaviour
         // 将 Text 对象作为 targetObject 的child
         textObject.transform.SetParent(targetObject.transform, false);
     }
+
+    public void RemoveTextComponent()
+    {
+        if (textComponent != null)
+        {
+            Destroy(textComponent.gameObject);
+        }else{
+
+        }
+    }
+
 }

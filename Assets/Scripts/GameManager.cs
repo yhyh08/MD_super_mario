@@ -48,6 +48,9 @@ public class GameManager : MonoBehaviour
         world = 1;
         stage = 0;
 
+        CoinManager.Instance.ResetCoins();
+        CoinManager.Instance.ResetScene();
+
         LoadLevel(world, stage);
     }
 
@@ -83,7 +86,7 @@ public class GameManager : MonoBehaviour
         if (lives > 0) {
             LoadLevel(world, stage);
         } else {
-            CoinManager.Instance.updateScene();
+            CoinManager.Instance.UpdateScene();
             GameOver();
         }
     }
