@@ -18,12 +18,7 @@ public class GameManager : MonoBehaviour
         get; 
         private set; 
     }
-    public int coins { 
-        get; 
-        private set; 
-    }
-
-    //public Text TotalCoin;
+    
     private void Awake()
     {
         if (Instance != null) {
@@ -49,11 +44,11 @@ public class GameManager : MonoBehaviour
 
     public void NewGame()
     {
-        lives = 1;
-        coins = 0;
+        lives = 2;
+        world = 1;
         stage = 0;
 
-        LoadLevel(1, stage);
+        LoadLevel(world, stage);
     }
 
     public void GameOver()
@@ -63,8 +58,8 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel(int world, int stage)
     {
-        this.world = world;
-        this.stage = stage;
+        // this.world = world;
+        // this.stage = stage;
 
         SceneManager.LoadScene($"{world}-{stage}");
     }
@@ -88,20 +83,12 @@ public class GameManager : MonoBehaviour
         if (lives > 0) {
             LoadLevel(world, stage);
         } else {
+            CoinManager.Instance.updateScene();
             GameOver();
         }
     }
 
-    public void AddCoin()
-    {
-        coins++;
-        Debug.Log(coins);
-        if (coins == 100)
-        {
-            coins = 0;
-            AddLife();
-        }
-    }
+    
     /*public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Coin")
@@ -113,4 +100,5 @@ public class GameManager : MonoBehaviour
     {
         lives++;
     }
+
 }
