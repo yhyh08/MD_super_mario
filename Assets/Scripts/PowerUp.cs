@@ -38,7 +38,6 @@ public class PowerUp : MonoBehaviour
                 player.GetComponent<Player>().Starpower();
                 break;
         }
-
         Destroy(gameObject);
     }
 }

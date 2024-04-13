@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     public bool big => bigRenderer.enabled;
     public bool dead => deathAnimation.enabled;
     public bool starpower { get; private set; }
+    
+    [SerializeField] SoundManager soundManager;
+    [SerializeField] AudioClip deathClip;
 
     private void Awake()
     {
@@ -38,6 +41,8 @@ public class Player : MonoBehaviour
         smallRenderer.enabled = false;
         bigRenderer.enabled = false;
         deathAnimation.enabled = true;
+
+        soundManager.PlaySoundFX(deathClip);
 
         GameManager.Instance.ResetLevel(3f);
     }

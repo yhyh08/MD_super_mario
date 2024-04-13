@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         lives = 1;
         coins = 0;
 
-        LoadLevel(1, 3);
+        LoadLevel(1, 1);
     }
 
     public void GameOver()
