@@ -9204,6 +9204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: 0
   coinNum: {fileID: 422478843}
+  targetObject: {fileID: 1576040019}
+  customFont: {fileID: 12800000, guid: 51b2bc90222accc4bb50f709af422a02, type: 3}
 --- !u!114 &1576040021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9265,7 +9267,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: -12
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!224 &1576040024
 RectTransform:
