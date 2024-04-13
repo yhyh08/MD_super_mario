@@ -44,9 +44,9 @@ public class GameManager : MonoBehaviour
 
     public void NewGame()
     {
-        lives = 10;
+        lives = 1;
         world = 1;
-        stage = 0;
+        stage = 4;
 
         CoinManager.Instance.ResetCoins();
         CoinManager.Instance.ResetScene();
@@ -102,14 +102,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
-    /*public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Coin")
-        {
-            TotalCoin.text = "" + coins;
-        }
-    }*/
     public void AddLife()
     {
         lives++;

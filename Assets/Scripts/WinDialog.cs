@@ -9,7 +9,6 @@ public class WinDialog : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            
           enterDialog.SetActive(true);
         }
     }

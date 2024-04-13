@@ -22,9 +22,6 @@ public class PlayerMovement : MonoBehaviour
     public bool sliding => (inputAxis > 0f && velocity.x < 0f) || (inputAxis < 0f && velocity.x > 0f);
     public bool falling => velocity.y < 0f && !grounded;
 
-    /*public AudioSource jumpSource;
-    public AudioClip jumpClip;*/
-
     [SerializeField] SoundManager soundManager;
     [SerializeField] AudioClip jumpClip;
     private void Awake()
@@ -60,18 +57,6 @@ public class PlayerMovement : MonoBehaviour
         {
             GroundedMovement();
         }
-/*        else if (Input.GetButtonDown("Jump") && grounded)
-        {
-            velocity.y = jumpForce;
-            jumping = true;
-
-            // Play jumping sound effect
-            if (jumpClip != null)
-            {
-                //jumpSource.Play();
-                soundManager.PlaySoundFX(jumpClip);
-            }
-        }*/
 
         ApplyGravity();
     }
@@ -158,13 +143,4 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-    /*private void PlayDeathSound()
-    {
-        // Ensure the deathSource and deathClip are assigned
-        if (deathSource != null && deathClip != null)
-        {
-            // Play the death sound effect
-            deathSource.PlayOneShot(deathClip);
-        }
-    }*/
 }

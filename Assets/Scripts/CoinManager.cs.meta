@@ -3,7 +3,11 @@ guid: d42d535b5f3637b45bf958087efc95eb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - coinNum: {instanceID: 0}
+  - targetObject: {instanceID: 0}
+  - customFont: {instanceID: 0}
+  - clip: {fileID: 8300000, guid: fd2a801223f9771488bb1bb00874da4b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
