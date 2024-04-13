@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public PlayerSpriteRenderer smallRenderer;
@@ -16,6 +16,18 @@ public class Player : MonoBehaviour
     
     [SerializeField] SoundManager soundManager;
     [SerializeField] AudioClip deathClip;
+
+    public int Coin = 0;
+    public Text CoinNum;
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "collection")
+        {
+            Coin += 1;
+            CoinNum.text = Coin.ToString();
+        }
+    }
 
     private void Awake()
     {

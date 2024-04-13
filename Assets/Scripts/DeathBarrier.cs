@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class DeathBarrier : MonoBehaviour
@@ -24,8 +26,9 @@ public class DeathBarrier : MonoBehaviour
 
             // Deactivate the player GameObject
             other.gameObject.SetActive(false);
-            // Reset the level after a delay
+            
             GameManager.Instance.ResetLevel(3f);
+            
         }
         else
         {
