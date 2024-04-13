@@ -35,7 +35,7 @@ public class CoinManager : MonoBehaviour
     public void AddCoin()
     {
         coins++;
-        if (coins == 100)
+        if (coins == 30)
         {
             GameManager.Instance.AddLife();
         }
