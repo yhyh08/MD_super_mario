@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Materials/completelvlbg.png.meta
-guid: 2dec612a935cd3e408b805f2ef483950
-========
-guid: 03207756cc8018e43bbc663e9fc84089
->>>>>>>> ae265bdc8e78f9ac0eecaffa1a2743fae88cad01:Assets/Materials/mariobg.png.meta
+guid: 81627e24eea03814aac3b4511f589819
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

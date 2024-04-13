@@ -44,9 +44,9 @@ public class GameManager : MonoBehaviour
 
     public void NewGame()
     {
-        lives = 1;
+        lives = 10;
         world = 1;
-        stage = 4;
+        stage = 1;
 
         CoinManager.Instance.ResetCoins();
         CoinManager.Instance.ResetScene();
