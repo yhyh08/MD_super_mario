@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     {
         lives = 2;
         world = 1;
-        stage = 4;
+        stage = 2;
 
         CoinManager.Instance.ResetCoins();
         CoinManager.Instance.ResetScene();
@@ -57,6 +57,11 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         SceneManager.LoadScene($"Game Over");
+    }
+
+    public void GameClear()
+    {
+        SceneManager.LoadScene($"Game Clear");
     }
 
     public void LoadLevel(int world, int stage)
@@ -75,7 +80,7 @@ public class GameManager : MonoBehaviour
             LoadLevel(world, stage);
         }else {
             CoinManager.Instance.UpdateScene();
-            GameOver();
+            GameClear();
         }
     }
 
