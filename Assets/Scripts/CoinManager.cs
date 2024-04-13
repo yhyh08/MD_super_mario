@@ -14,6 +14,8 @@ public class CoinManager : MonoBehaviour
     public Font customFont;
     public AudioClip clip;
     private AudioSource audioSource;
+    private int screenWidth;
+    private int screenHeight;
 
     private void Awake()
     {
@@ -36,6 +38,8 @@ public class CoinManager : MonoBehaviour
 
     void Update()
     {
+        screenWidth = Screen.width;
+        screenHeight = Screen.height;
         coinNum.text = "Coin Count: " + coins.ToString();
     }
 
@@ -71,15 +75,25 @@ public class CoinManager : MonoBehaviour
 
         textComponent.text = coins.ToString();
         textComponent.font = customFont;
-        textComponent.fontSize = 110;
+        
         textComponent.color = new Color(242f / 255f, 1f, 0f);
         textComponent.alignment = TextAnchor.MiddleCenter;
 
         RectTransform textRectTransform = textComponent.GetComponent<RectTransform>();
-        // 设置位置
-        textRectTransform.anchoredPosition = new Vector2(275f, 40f); // Inspector 的 Rect Transfrom Pos x 和 Pos y
-        // 设置大小
-        textRectTransform.sizeDelta = new Vector2(225f, 120f); // 设置宽度为 200，高度为 50
+        if(screenWidth < 650f || screenHeight < 460f ){
+            textComponent.fontSize = 110;
+            // 设置位置
+            textRectTransform.anchoredPosition = new Vector2(275f, 40f); // Inspector 的 Rect Transfrom Pos x 和 Pos y
+            // 设置大小
+            textRectTransform.sizeDelta = new Vector2(225f, 120f);
+        }else{
+            textComponent.fontSize = 100;
+            // 设置位置
+            textRectTransform.anchoredPosition = new Vector2(105f, 20f); // Inspector 的 Rect Transfrom Pos x 和 Pos y
+            // 设置大小
+            textRectTransform.sizeDelta = new Vector2(225f, 120f); 
+        }
+        
 
 
         // 将 Text 对象作为 targetObject 的child
